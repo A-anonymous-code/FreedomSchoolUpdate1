@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission | Freedom Islamic Private School</title>
+  <link rel="stylesheet" href="school.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-section">
+        <img src="logo.jpg" alt="Freedom Islamic Private School Logo" class="school-logo" />
+        <span class="school-name">Freedom Islamic Private School</span>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="freedom.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="tuition.html">Tuition Fee</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="investor.html">Investor</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="section-title">
+      <h1>Admission & Enrollment</h1>
+      <p>Start your child's journey at Freedom Islamic Private School with clear guidance and support every step of the way.</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-card">
+        <h2>Admission Process</h2>
+        <ul class="values-list">
+          <li>Step 1: Review requirements and prepare documents.</li>
+          <li>Step 2: Complete the application form below.</li>
+          <li>Step 3: Attend the interview or assessment session.</li>
+          <li>Step 4: Receive enrollment confirmation.</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h2>Required Documents</h2>
+        <ul class="values-list">
+          <li>Birth certificate or age declaration.</li>
+          <li>Previous academic records (where applicable).</li>
+          <li>Passport photograph.</li>
+          <li>Parent/guardian identification.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-title">
+    <h2>Apply to Freedom Islamic Private School</h2>
+    <p>Complete the basic information below and our admissions team will contact you.</p>
+  </section>
+
+  <section class="contact-grid">
+    <div class="contact-card">
+      <h2>Admissions Contact</h2>
+      <p>For questions about the application process, fees, or enrollment, please contact our office.</p>
+      <p><strong>Email:</strong> okemuhammedyusuf@gmail.com</p>
+      <p><strong>Phone:</strong> +234 803 807 9475</p>
+      <p><strong>Phone:</strong> +234 815 651 2929</p>
+      <p><strong>Office:</strong> 3 Oxford Close, Freedom Street, Jenriyin Estate, Wofun-Olodo, Ibadan</p>
+    </div>
+    <form class="contact-form">
+      <div class="form-field">
+        <label for="name">Parent / Guardian Name</label>
+        <input id="name" type="text" placeholder="Your full name" required />
+      </div>
+      <div class="form-field">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="Your email address" required />
+      </div>
+      <div class="form-field">
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" placeholder="Phone number" required />
+      </div>
+      <div class="form-field">
+        <label for="child">Student Name</label>
+        <input id="child" type="text" placeholder="Child's name" required />
+      </div>
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us what you need"></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Submit Application</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Freedom Islamic Private School</h4>
+        <p>Integrity and Faith � Ibadan, Nigeria</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="freedom.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: okemuhammedyusuf@gmail<br>
+            .com</p>
+        <p>Phone: +234 803 807 9475</p>
+        <p>Phone: +234 815 651 2929</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Freedom Islamic Private School. All rights reserved.</p>
+      <p class="watermark">Website Designed by Edge-Tech<br>edgetech336@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="school.js"></script>
+  <script>
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const child = document.getElementById('child').value;
+      const message = document.getElementById('message').value;
+      const text = `Application from ${name}\nEmail: ${email}\nPhone: ${phone}\nChild: ${child}\nMessage: ${message}`;
+      const encoded = encodeURIComponent(text);
+      window.location.href = `https://wa.me/2348038079475?text=${encoded}`;
+    });
+  </script>
+</body>
+</html>
+
+
+
